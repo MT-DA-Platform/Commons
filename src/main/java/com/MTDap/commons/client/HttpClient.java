@@ -1,4 +1,4 @@
-package com.MTDap.commons.client;
+package com.mtdap.commons.client;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpResponse;

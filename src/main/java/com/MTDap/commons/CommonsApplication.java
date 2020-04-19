@@ -1,4 +1,4 @@
-package com.MTDap.commons;
+package com.mtdap.commons;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
