@@ -11,7 +11,7 @@
 	<groupId>com.MTDap</groupId>
 	<artifactId>commons</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Commons</name>
+	<name>commons</name>
 	<description>Commons of the platform</description>
 
 	<properties>
