@@ -8,10 +8,10 @@
 		<version>2.2.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.MTDap</groupId>
+	<groupId>com.mtdap</groupId>
 	<artifactId>commons</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>commons</name>
+	<name>Commons</name>
 	<description>Commons of the platform</description>
 
 	<properties>
