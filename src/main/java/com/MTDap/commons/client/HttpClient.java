@@ -1,5 +1,6 @@
 package com.MTDap.commons.client;
 
+import com.MTDap.commons.exception.APIClientException;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -25,8 +26,7 @@ public class HttpClient {
     private HttpClient() {
     }
 
-    public static String call(String url, Map<String, String> headers, String type, String data) {
-        //public static String call(String url, Map<String, String> headers, String type, String data) throws APIClientException {
+    public static String call(String url, Map<String, String> headers, String type, String data) throws APIClientException {
 
         StringBuilder result = new StringBuilder();
 
@@ -62,7 +62,7 @@ public class HttpClient {
         } catch (IOException e) {
             String message = "Error while executing request : " + url;
             LOGGER.error(message, e);
-            //throw new APIClientException(message, e);
+            throw new APIClientException(message, e);
 
         }
 
