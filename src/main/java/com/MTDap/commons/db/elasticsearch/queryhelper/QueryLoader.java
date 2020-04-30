@@ -20,7 +20,6 @@ import static com.MTDap.commons.constants.Constants.UTF_8_ENCODING;
 public class QueryLoader {
     private static final Logger LOGGER = LoggerFactory.getLogger(QueryLoader.class);
     private static final List<String> FILE_EXTENSIONS = new ArrayList<>();
-    private static QueryLoader instance = new QueryLoader();
 
     static {
         FILE_EXTENSIONS.add("sql");
@@ -29,6 +28,8 @@ public class QueryLoader {
 
     private String QUERIES_FOLDER = "." + FILE_SEPARATOR + "config" + FILE_SEPARATOR + "queries";
     private Map<String, String> queries;
+
+    private static QueryLoader instance = new QueryLoader();
 
     private QueryLoader() {
         try {
