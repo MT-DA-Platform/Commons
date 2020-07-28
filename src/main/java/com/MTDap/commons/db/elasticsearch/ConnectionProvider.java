@@ -16,7 +16,7 @@ public class ConnectionProvider {
     @Value("${elasticsearch.port}")
     private String port;
 
-    @Bean
+    //@Bean
     public RestHighLevelClient getConnection() {
         HttpHost[] httpHosts = {new HttpHost(host, Integer.parseInt(port))};
         RestClientBuilder clientBuilder = RestClient.builder(httpHosts);
