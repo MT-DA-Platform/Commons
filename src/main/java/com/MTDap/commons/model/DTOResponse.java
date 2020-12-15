@@ -29,6 +29,8 @@ public class DTOResponse extends HashMap<String, Object> {
         this.put(STATUS, code);
     }
 
+    public Object getCode(){return this.get(STATUS);}
+
     public void setMessage(Object message) {
         this.put(MESSAGE, message);
     }

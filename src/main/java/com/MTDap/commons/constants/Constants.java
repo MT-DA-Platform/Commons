@@ -22,4 +22,5 @@ public class Constants {
     public static final String STATIC_ADAPTER = "static-adapter";
     public static final String METADATA_ADAPTER = "metadata-adapter";
     public static final String AUTH_SERVICE = "auth-service";
+    public static final String EXTENSION_HANDLER = "extension-handler";
 }
